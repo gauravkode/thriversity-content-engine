@@ -5159,8 +5159,24 @@ var txt = data.choices[0].message.content;
 
 var clean = txt.replace(/```json|```/g,"").trim();
 
+const screenOptions = clean
+  .split("\n")
+  .filter(line =>
+    line.length > 15 &&
+    line.length < 90 &&
+    !line.toLowerCase().includes("caption") &&
+    !line.toLowerCase().includes("cta") &&
+    !line.toLowerCase().includes("hook") &&
+    !line.includes(":")
+  );
+
+const randomScreen =
+  screenOptions[
+    Math.floor(Math.random() * screenOptions.length)
+  ] || "Corporate reality nobody tells freshers.";
+
 var p2 = {
-  screen: txt.split("Caption")[0],
+  screen: randomScreen,
   caption: txt,
   trigger: "Save & Share"
 };
