@@ -4869,7 +4869,26 @@ openings[Math.floor(Math.random()*openings.length)];
   var trend = document.getElementById("trendSel").value;
   var pi = getCurrentPillarIndex();
   var suf = getSuffix(pi);
+const topicSeeds = [
+  "freshers struggling in corporate",
+  "manager employee politics",
+  "first salary mistakes",
+  "toxic workplace culture",
+  "college vs corporate reality",
+  "Gen Z office problems",
+  "silent career killers",
+  "employee reputation mistakes",
+  "LinkedIn fake productivity",
+  "corporate communication mistakes",
+  "freshers getting ignored",
+  "promotion politics",
+  "workplace burnout",
+  "corporate survival lessons",
+  "office confidence problems"
+];
 
+const randomTopic =
+  topicSeeds[Math.floor(Math.random() * topicSeeds.length)];
   var prompt = `
 You are Manav Lalotra, CEO & Founder of Thriversity.
 
@@ -4978,6 +4997,7 @@ RETENTION REHOOKS:
 - include 2 retention rehooks minimum
 9. Save/share trigger
 Content Context:
+Main Topic Seed: ${randomTopic}
 Name: ${name}
 Hook Type: ${hookType}
 Hook Psychology: ${hookDesc}
