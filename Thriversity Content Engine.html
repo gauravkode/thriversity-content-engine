@@ -5179,21 +5179,26 @@ var txt = data.choices[0].message.content;
 
 var clean = txt.replace(/```json|```/g,"").trim();
 
-const screenOptions = clean
-  .split("\n")
-  .filter(line =>
-    line.length > 15 &&
-    line.length < 90 &&
-    !line.toLowerCase().includes("caption") &&
-    !line.toLowerCase().includes("cta") &&
-    !line.toLowerCase().includes("hook") &&
-    !line.includes(":")
-  );
+const screenOptions = [
+  `Nobody warns freshers about this.`,
+  `Corporate life changes people fast.`,
+  `Your first manager shapes your confidence.`,
+  `Most freshers learn this too late.`,
+  `Office politics starts silently.`,
+  `Your salary is not your career.`,
+  `Freshers are struggling quietly.`,
+  `Corporate culture shocks everyone.`,
+  `Promotion is not only hard work.`,
+  `LinkedIn hides real struggles.`,
+  `Burnout starts before success.`,
+  `Tier 2 students face different pressure.`,
+  `Confidence matters more than CGPA.`,
+  `Most employees fake productivity.`,
+  `Your first year decides everything.`
+];
 
 const randomScreen =
-  screenOptions[
-    Math.floor(Math.random() * screenOptions.length)
-  ] || "Corporate reality nobody tells freshers.";
+screenOptions[Math.floor(Math.random() * screenOptions.length)];
 
 var p2 = {
   screen: randomScreen,
