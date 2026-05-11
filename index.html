@@ -93,7 +93,29 @@ select{width:100%;padding:8px 10px;border-radius:8px;border:1px solid #ddd;backg
   <div class="row2">
     <div>
       <span class="fl">Format</span>
-      <select id="fmtSel">
+
+<select id="fmtSel">
+<option value="rc">Read Caption Reel 🔥</option>
+<option value="carousel">Carousel (5 slides)</option>
+<option value="static">Static Post</option>
+<option value="talking">Talking Video Script 🎥</option>
+</select>
+
+</div>
+
+<div>
+<span class="fl">Series</span>
+
+<select id="seriesSel">
+<option>None</option>
+<option>Corporate Reality</option>
+<option>Freshers Are Cooked</option>
+<option>Tier 3 Truths</option>
+<option>Placement Mistakes</option>
+<option>LinkedIn Secrets</option>
+<option>AI Career Reality</option>
+</select>
+</div>
         <option value="rc">Read Caption Reel 🔥</option>
 <option value="carousel">Carousel (5 slides)</option>
 <option value="static">Static Post</option>
@@ -109,15 +131,50 @@ select{width:100%;padding:8px 10px;border-radius:8px;border:1px solid #ddd;backg
 <option>Final year student</option>
 <option>Early professional 2-5 yrs</option>
 <option>Senior professional</option>
+<option>Fresher (0–6 months into job)</option>
+<option>Pre-final year student</option>
 </select>
 </div>
 
 <div>
 <span class="fl">Intensity</span>
+
 <select id="intSel">
 <option>Normal</option>
 <option>Viral</option>
 <option>Aggressive Viral</option>
+</select>
+
+</div>
+
+<div>
+<span class="fl">Emotion</span>
+
+<select id="emoSel">
+<option>Career Anxiety</option>
+<option>Fear</option>
+<option>Confidence</option>
+<option>Motivation</option>
+<option>Relatable</option>
+<option>Corporate Truth</option>
+<option>Urgency</option>
+</select>
+</div>
+<option>Normal</option>
+<option>Viral</option>
+<option>Aggressive Viral</option>
+</select>
+</div>
+<div>
+<span class="fl">Trend Mode</span>
+
+<select id="trendSel">
+<option>Off</option>
+<option>Instagram Viral</option>
+<option>LinkedIn Creator</option>
+<option>Founder Authority</option>
+<option>Gen Z Aggressive</option>
+<option>Storytelling Viral</option>
 </select>
 </div>
 
@@ -230,9 +287,12 @@ var PHT = [
   "#Teamwork #Tier2Careers #WorkplaceCulture #CampusToOffice #Thriversity #CareerReadiness #ProdEdgee",
   "#EmotionalIntelligence #Tier2Careers #EQatWork #CampusToOffice #Thriversity #CareerReadiness #ProdEdgee",
   "#Networking #Tier2Careers #BuildConnections #CampusToOffice #Thriversity #CareerReadiness #ProdEdgee",
-  "#FinancialBasics #Tier2Careers #FirstSalary #CampusToOffice #Thriversity #CareerReadiness #ProdEdgee"
+  "#FinancialBasics #Tier2Careers #FirstSalary #CampusToOffice #Thriversity #CareerReadiness #ProdEdgee",
+  "#PlacementPrep #Tier2Careers #CampusPlacement2026 #PlacementSeason #Thriversity #CareerReadiness #ProdEdgee",
+  "#CollegeToCorporate #Tier2Careers #FirstJobIndia #CampusToOffice #Thriversity #CareerReadiness #ProdEdgee",
+  "#FirstSalaryIndia #Tier2Careers #FresherFinance #SalarySlip #Thriversity #CareerReadiness #ProdEdgee"
 ];
-var PILLARS = ["Corporate Foundations","Communication","Personal Branding","Productivity","Problem Solving","Teamwork","EQ & Adaptability","Networking","Financial Basics"];
+var PILLARS = ["Corporate Foundations","Communication","Personal Branding","Productivity","Problem Solving","Teamwork","EQ & Adaptability","Networking","Financial Basics","Campus Placement Prep","College to Corporate","First Salary & Money"];
 var HOT_TOPICS = ["AI taking entry level jobs","TCS 25k layoffs FY27","Moonlighting","Salary hike vs job switch","WFH ending","LinkedIn ghosting"];
 var HOOK_TYPES = ["Contrarian","Story","Curiosity","Confession","Result"];
 var HOOK_ICONS = ["⚡","📖","🔍","💬","✅"];
@@ -2961,6 +3021,1070 @@ Month 12: ₹3 lakhs saved above EPF.
 
 Save this. Build your budget before your first salary arrives.
 — Manav Lalotra, CEO & Founder, Thriversity` },
+],
+// ── 9 CAMPUS PLACEMENT PREP ─────────────────
+[
+{ type:"con", trigger:"save",
+  screen:"Good CGPA won't get you placed.",
+  q:'"Every student is optimizing for marks. Companies shortlist on something entirely different. Here\'s what HR actually reads in your profile."',
+  cap:`Good CGPA won't get you placed.
+
+I know that's not what your professors told you. But I've spoken to 200+ freshers after their placement results — and the pattern is clear.
+
+What companies actually shortlist on:
+
+1. Communication in the first 60 seconds of an interview — not certificates.
+2. One project or internship where you solved a real problem — not 9.0 CGPA.
+3. A LinkedIn profile that shows you've been thinking about this domain — not your marksheet.
+4. Confidence in "tell me about yourself" — not your rank in class.
+5. Clarity on why this company — not generic answers from YouTube prep videos.
+
+CGPA gets you past the eligibility filter.
+Everything after that is you.
+
+Save this before placement season starts.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Bold text on screen]: "Good CGPA won't get you placed."
+[Manav — direct to camera]: "Here's what actually does."
+
+CONTENT (2-45s)
+What HR actually shortlists on — not marks:
+One: Communication in the first 60 seconds.
+Two: One real project where you solved something.
+Three: A LinkedIn that shows you're thinking about this domain.
+Four: Confidence in Tell Me About Yourself.
+Five: Clarity on WHY this specific company.
+
+CTA (45-55s)
+CGPA gets you past the eligibility filter.
+Everything after that is you.
+Save this before placement season starts.
+— Manav Lalotra, CEO & Founder, Thriversity @thriversity_prodedgee`,
+  slides:[
+    {h:"Good CGPA won't get you placed.",b:"I've spoken to 200+ freshers after their results.\n\nThe pattern is always the same."},
+    {h:"What companies actually shortlist on:",b:"1. Communication in the first 60 seconds.\n2. One real project where you solved something.\n3. A LinkedIn showing domain curiosity."},
+    {h:"What else they look for:",b:"4. Confidence in 'Tell me about yourself.'\n5. Clarity on WHY this company specifically.\n\nNot generic YouTube prep answers."},
+    {h:"CGPA only does one thing.",b:"It gets you past the eligibility filter.\n\nEverything after that is 100% you."},
+    {h:"Save this before placement season starts.",b:"The students who get placed in Round 1 know this.\n\nNow you do too.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"Good CGPA won't get you placed.",
+  static_c:`What actually gets you shortlisted:
+1. Communication in the first 60 seconds.
+2. One project where you solved a real problem.
+3. LinkedIn that shows domain curiosity.
+4. Confidence in Tell Me About Yourself.
+5. Clarity on WHY this company.
+
+CGPA = eligibility filter. Everything else = you.
+
+Save this before placement season.
+— Manav Lalotra, CEO & Founder, Thriversity` },
+
+{ type:"sto", trigger:"share",
+  screen:"8.4 CGPA. Not placed. 6.8 CGPA. First offer.",
+  q:'"Same college. Same department. Same batch. One thing was different — and it wasn\'t marks."',
+  cap:`8.4 CGPA. Not placed in Round 1.
+6.8 CGPA. First offer in Round 1.
+
+Same college. Same department. Same batch.
+
+I spoke to both of them.
+
+Here's what was different:
+
+The 8.4 student had prepared for every technical question. Could write code on a whiteboard. Knew every formula.
+
+The 6.8 student had done one real internship — even unpaid — where she'd built something. She could talk about a problem she faced, how she thought about it, what she tried, what failed, what worked.
+
+The interviewer didn't ask her about algorithms.
+
+He asked: "Tell me about something you built."
+
+She talked for 4 minutes without stopping.
+
+That was the interview.
+
+The best preparation for placement isn't revision.
+
+It's doing something real — before placement season.
+
+Share this with a junior who still has time.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text on screen]: "8.4 CGPA. Not placed. 6.8 CGPA. First offer."
+[Manav]: "Same college. Same batch. Here's what was different."
+
+CONTENT (2-45s)
+8.4 CGPA — prepared every technical question. Could code on a whiteboard.
+6.8 CGPA — one real internship. Built something. Even unpaid.
+
+The interviewer asked: "Tell me something you built."
+She talked for 4 minutes without stopping.
+
+CTA (45-55s)
+That was the interview.
+The best placement prep isn't revision.
+It's doing something real — before placement season starts.
+Share this with a junior who still has time.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"8.4 CGPA. Not placed in Round 1.\n6.8 CGPA. First offer.",b:"Same college. Same department. Same batch.\n\nOne thing was different."},
+    {h:"The 8.4 student:",b:"Prepared every technical question.\nCould write code on a whiteboard.\nKnew every formula by heart."},
+    {h:"The 6.8 student:",b:"One real internship — even unpaid.\n\nBuilt something. Could talk about a problem she faced, what she tried, what failed, what worked."},
+    {h:"The interview moment.",b:"Interviewer asked: 'Tell me something you built.'\n\nShe talked for 4 minutes without stopping.\n\nThat was the interview."},
+    {h:"Share this with a junior who still has time.",b:"The best placement prep isn't revision.\n\nIt's doing something real before placement season.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"8.4 CGPA. Not placed. 6.8 CGPA. First offer.",
+  static_c:`Same college. Same batch.
+
+One had perfect technical prep.
+One had one real internship — even unpaid.
+
+Interviewer asked: "Tell me something you built."
+She talked for 4 minutes.
+
+That was the interview.
+
+Best placement prep = doing something real before the season.
+
+Share this with a junior who still has time.
+— Manav Lalotra, CEO & Founder, Thriversity` },
+
+{ type:"cur", trigger:"save",
+  screen:"What HR reads in 7 seconds.",
+  q:'"Before your resume is read, it is scanned. Here is exactly what HR is looking for in those 7 seconds — and what kills your shortlist chance before they read a single word."',
+  cap:`What HR reads in your resume in 7 seconds.
+
+(Before they decide whether to read the rest.)
+
+Eye-tracking studies on recruiters show this exact order:
+
+Second 1–2: Your name + college name.
+Second 3: Your CGPA — only to check the cutoff.
+Second 4–5: Most recent experience or project section.
+Second 6: Skills section — do I see what I'm looking for?
+Second 7: Formatting — does this look like someone who cares about details?
+
+What kills your shortlist chance in those 7 seconds:
+
+— Long paragraphs (they don't read paragraphs in 7 seconds)
+— No project section
+— Skills listed as: MS Office, Photoshop, Teamwork
+— 3-page resume with your 10th marks still on it
+— No contact info visible at the top
+
+Your resume is not a document. It's a 7-second pitch.
+
+Save this and fix your resume before this season.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text on screen]: "What HR reads in 7 seconds."
+[Manav]: "Before they decide if they'll read the rest."
+
+CONTENT (2-45s)
+Eye-tracking studies on recruiters show this exact order:
+Second 1-2: Name and college.
+Second 3: CGPA — just to check the cutoff.
+Second 4-5: Project or experience section.
+Second 6: Skills — do I see what I need?
+Second 7: Formatting — does this person care about details?
+
+CTA (45-55s)
+Your resume is not a document.
+It's a 7-second pitch.
+Save this and fix yours before this placement season.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"What HR reads in your resume in 7 seconds.",b:"Before they decide whether to read the rest.\n\nEye-tracking studies on recruiters show this exact order."},
+    {h:"Seconds 1–3",b:"Second 1-2: Your name + college name.\nSecond 3: Your CGPA — only to check the cutoff."},
+    {h:"Seconds 4–7",b:"Second 4-5: Most recent project or experience.\nSecond 6: Skills section.\nSecond 7: Formatting — does this person care about details?"},
+    {h:"What kills your shortlist in 7 seconds:",b:"— Long paragraphs (no one reads them)\n— No project section\n— Skills: MS Office, Teamwork\n— 3-page resume with 10th marks still on it"},
+    {h:"Your resume is a 7-second pitch.",b:"Save this and fix yours before placement season.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"What HR reads in 7 seconds.",
+  static_c:`The order recruiters actually scan your resume:
+
+Sec 1-2: Name + college
+Sec 3: CGPA (cutoff check only)
+Sec 4-5: Projects / experience
+Sec 6: Skills
+Sec 7: Formatting
+
+What kills your shortlist:
+— Long paragraphs
+— No project section
+— "MS Office" as a skill
+— 3-page resume with 10th marks
+
+Your resume is a 7-second pitch. Treat it that way.
+— Manav Lalotra, CEO & Founder, Thriversity` },
+
+{ type:"conf", trigger:"share",
+  screen:"I told 12 students their resume was ready.",
+  q:'"I reviewed resumes for a placement drive. I said they were good. 9 of the 12 didn\'t get shortlisted. I went back and found the exact reason. It was the same mistake in every one of them."',
+  cap:`I told 12 students their resume was ready.
+
+9 of them didn't get shortlisted.
+
+I went back and found the exact issue.
+
+Same mistake in every single resume.
+
+They had described what they did. Not what they achieved.
+
+"Worked on a web app for college project."
+vs
+"Built a web app used by 200+ students to track attendance — reduced manual errors by 60%."
+
+Both describe the same project.
+
+One is a task description. One is a result.
+
+HR doesn't care what you did. They care what changed because of what you did.
+
+Every bullet point on your resume should answer: "So what?"
+
+If it doesn't have a number, an outcome, or a before-and-after — rewrite it.
+
+Share this with someone who's about to submit their resume without checking this.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text]: "I told 12 students their resume was ready."
+[Manav]: "9 of them didn't get shortlisted. Same mistake in all of them."
+
+CONTENT (2-45s)
+They described what they did — not what they achieved.
+
+"Worked on a web app for college project."
+vs
+"Built a web app used by 200+ students — reduced manual errors by 60%."
+
+Same project. Totally different impact.
+
+HR doesn't care what you did.
+They care what changed because of you.
+
+CTA (45-55s)
+Every bullet on your resume should answer: "So what?"
+No number, no outcome, no result = rewrite it.
+Share this with someone submitting their resume this week.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"I told 12 students their resume was ready.",b:"9 of them didn't get shortlisted.\n\nI went back and found the exact mistake.\n\nSame error in every single one."},
+    {h:"What they wrote vs what they should have:",b:"❌ 'Worked on a web app for college project.'\n\n✅ 'Built a web app used by 200+ students — reduced manual errors by 60%.'"},
+    {h:"Both describe the same project.",b:"One is a task description.\n\nOne is a result.\n\nHR doesn't care what you did."},
+    {h:"They care what changed because of you.",b:"Every bullet point on your resume must answer:\n\n'So what?'"},
+    {h:"Share this with someone submitting their resume.",b:"No number. No outcome. No result.\n= Rewrite it.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"I told 12 students their resume was ready.",
+  static_c:`9 of them didn't get shortlisted.
+
+Same mistake in every resume.
+
+❌ "Worked on a web app for college project."
+✅ "Built a web app used by 200+ students — reduced manual errors by 60%."
+
+Same project. Different impact.
+
+HR doesn't care what you did.
+They care what changed because of you.
+
+Every bullet should answer: "So what?"
+No result = rewrite it.
+— Manav Lalotra, CEO & Founder, Thriversity` },
+
+{ type:"res", trigger:"save",
+  screen:"47 Tier 2 students placed. This is what they had.",
+  q:'"Not what they studied. Not their CGPA. The 3 things every placed student had — that the unplaced students didn\'t."',
+  cap:`47 Tier 2 college students placed in the last 3 months.
+
+I looked at what they all had in common.
+
+It wasn't CGPA. It wasn't college brand. It wasn't connections.
+
+3 things every placed student had:
+
+1. ONE project they could speak about confidently for 5 minutes — with a problem, an approach, a result. Not a college assignment. A real or self-initiated project.
+
+2. A LinkedIn profile that looked active — not just a resume copy-pasted online. Profile photo. About section with personality. At least 3 posts in the last 6 months.
+
+3. A clear answer to "Why this company?" — not generic. Something specific about the company's work, product, or culture they could reference.
+
+That's it.
+
+No NIIT certificate. No 10 courses on Coursera. No paid prep platform.
+
+These three things. Consistently.
+
+Save this. Start with point 1 this week.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text on screen]: "47 Tier 2 students placed."
+[Manav]: "Here's the only 3 things they had in common."
+
+CONTENT (2-45s)
+Not CGPA. Not college brand. Not connections.
+
+One: One project — problem, approach, result. Not a college assignment. Something real.
+Two: A LinkedIn that looks active. Photo. About section. 3 posts minimum.
+Three: A clear answer to "Why this company?" — specific, not generic.
+
+CTA (45-55s)
+That's it. No paid courses. No certifications.
+Just these 3 things.
+Save this. Start with point 1 this week.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"47 Tier 2 students placed in 3 months.",b:"I looked at what they all had in common.\n\nNot CGPA. Not college brand. Not connections."},
+    {h:"Thing 1: One real project.",b:"Could speak about it confidently for 5 minutes.\nProblem → Approach → Result.\n\nNot a college assignment. Something real or self-initiated."},
+    {h:"Thing 2: An active LinkedIn.",b:"Not just resume copy-pasted.\nProfile photo. About section with personality.\nAt least 3 posts in 6 months."},
+    {h:"Thing 3: A specific 'Why this company?'",b:"Not generic YouTube answers.\nSomething about their product, work, or culture.\nResearched. Specific. Confident."},
+    {h:"Save this. Start with point 1 this week.",b:"No NIIT cert. No 10 Coursera courses.\nJust these 3 things.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"47 Tier 2 students placed. Here's what they had.",
+  static_c:`Not CGPA. Not college brand.
+
+3 things every placed student had:
+1. One real project — problem, approach, result.
+2. An active LinkedIn (photo + 3+ posts).
+3. A specific answer to "Why this company?"
+
+No paid courses. No certifications.
+Just these 3 things — consistently.
+
+Save this. Start with point 1 this week.
+— Manav Lalotra, CEO & Founder, Thriversity` }
+],
+
+// ── 10 COLLEGE TO CORPORATE ─────────────────
+[
+{ type:"con", trigger:"save",
+  screen:"Your college made you the wrong kind of smart.",
+  q:'"College rewards individual performance. Corporate rewards collaboration. College rewards knowing the answer. Corporate rewards asking the right question. The reset nobody prepares freshers for."',
+  cap:`Your college made you the wrong kind of smart.
+
+Not a criticism. An observation that affects every fresher's first 6 months.
+
+Here's the mismatch:
+
+College: Answer the question correctly. Corporate: Ask the right question first.
+College: Individual performance. Corporate: How well you brought others along.
+College: Submit before deadline. Corporate: Communicate before the deadline that you'll miss it.
+College: 40% = passing grade. Corporate: 70% finished = missed deliverable.
+College: Study more to improve. Corporate: Ask for feedback to improve.
+
+None of these skills are wrong. They just don't transfer.
+
+The freshers who figure this out in Month 1 accelerate in Month 6.
+
+The ones who figure it out in Month 6 spend Year 1 recovering.
+
+Save this before your first day.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text on screen]: "Your college made you the wrong kind of smart."
+[Manav]: "Here's exactly what shifts when you enter corporate."
+
+CONTENT (2-45s)
+College: Answer correctly. Corporate: Ask the right question.
+College: Individual performance. Corporate: Bring others along.
+College: Submit before deadline. Corporate: Communicate before you miss it.
+College: 40% is passing. Corporate: 70% done is a missed deliverable.
+College: Study more. Corporate: Ask for feedback.
+
+CTA (45-55s)
+Figure this out in Month 1 — you accelerate in Month 6.
+Figure it out in Month 6 — you spend Year 1 recovering.
+Save this before your first day.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"Your college made you the wrong kind of smart.",b:"Not a criticism. An observation.\n\nThis mismatch hits every fresher in Month 1."},
+    {h:"How college trained you:",b:"Answer correctly.\nIndividual performance.\nSubmit before deadline.\n40% = passing grade.\nStudy more to improve."},
+    {h:"What corporate actually rewards:",b:"Ask the right question first.\nBring others along.\nCommunicate before you miss the deadline.\n70% done = missed deliverable.\nAsk for feedback to improve."},
+    {h:"None of these skills are wrong.",b:"They just don't transfer automatically.\n\nThe reset is real. Nobody prepares you for it."},
+    {h:"Save this before your first day.",b:"Figure it out in Month 1 → accelerate in Month 6.\nFigure it out in Month 6 → spend Year 1 recovering.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"Your college made you the wrong kind of smart.",
+  static_c:`College → Corporate mismatch:
+
+❌ Answer correctly → ✅ Ask the right question
+❌ Individual performance → ✅ Bring others along
+❌ Submit on time → ✅ Communicate before you're late
+❌ 40% is passing → ✅ 70% done = missed deliverable
+❌ Study more → ✅ Ask for feedback
+
+Figure this out Month 1 → accelerate by Month 6.
+Figure it out Month 6 → spend Year 1 recovering.
+
+Save this before your first day.
+— Manav Lalotra, CEO & Founder, Thriversity` },
+
+{ type:"sto", trigger:"share",
+  screen:"Day 3. He sent his first work email.",
+  q:'"It was 4 paragraphs long. His manager replied in 6 words. That 6-word reply changed how he communicated for the rest of his career."',
+  cap:`Day 3 at his first job.
+
+He sent his first work email.
+
+It was 4 paragraphs long. Detailed. Polite. Thorough.
+
+His manager replied in 6 words:
+
+"Can you give me a number?"
+
+He didn't understand at first.
+
+Then it hit him.
+
+His manager didn't need context. She needed a decision input. And he'd spent 4 paragraphs building up to the number — which was buried in paragraph 3.
+
+Corporate communication is the opposite of college writing.
+
+In college: more words = more effort = better grade.
+In corporate: fewer words = clearer thinking = faster action.
+
+The unwritten rule of email at work:
+State the ask or the answer in Line 1.
+Context goes below, not above.
+
+He told me that 6-word reply saved him 2 years of miscommunication habits.
+
+Share this with someone who just joined their first job.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text]: "Day 3. He sent his first work email."
+[Manav]: "His manager replied in 6 words. It changed everything."
+
+CONTENT (2-45s)
+4-paragraph email. Polite. Thorough. Detailed.
+Manager replied: "Can you give me a number?"
+
+She didn't need context. She needed a decision input.
+The number was buried in paragraph 3.
+
+College: more words = more effort = better grade.
+Corporate: fewer words = clearer thinking = faster action.
+
+CTA (45-55s)
+The rule: State the ask in Line 1. Context goes below.
+Share this with someone who just joined their first job.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"Day 3. He sent his first work email.",b:"4 paragraphs. Polite. Thorough. Detailed.\n\nHis manager replied in 6 words."},
+    {h:"\"Can you give me a number?\"",b:"She didn't need context.\nShe needed a decision input.\n\nThe number was buried in paragraph 3."},
+    {h:"The college vs corporate writing gap:",b:"College: More words = more effort = better grade.\n\nCorporate: Fewer words = clearer thinking = faster action."},
+    {h:"The unwritten email rule at work:",b:"State the ask or the answer in Line 1.\n\nContext goes below — not above."},
+    {h:"Share this with someone who just joined their first job.",b:"That 6-word reply saved him 2 years of bad habits.\n\nNow you know the rule before Day 3.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"Day 3. He sent his first work email.",
+  static_c:`4 paragraphs. Polite. Thorough.
+
+Manager replied: "Can you give me a number?"
+
+Corporate email rule:
+→ State the ask in Line 1.
+→ Context goes BELOW — not above.
+
+College: More words = better grade.
+Corporate: Fewer words = clearer thinking.
+
+Share this with someone who just joined their first job.
+— Manav Lalotra, CEO & Founder, Thriversity` },
+
+{ type:"cur", trigger:"save",
+  screen:"The unwritten rule that ends careers in Month 1.",
+  q:'"It\'s not about your work quality. It\'s about something that happens in the first 30 days that most freshers never realize — until it\'s already cost them their reputation."',
+  cap:`There is one unwritten rule in every corporate job.
+
+Nobody puts it in the offer letter or the induction deck.
+
+But it decides your first-year reputation more than anything else.
+
+The rule: Visibility matters more than effort in the first 30 days.
+
+Here's what that means:
+
+You could work 10 hours a day — but if your manager doesn't see you solving problems, you're invisible.
+
+You could finish every task — but if you never bring a risk or an insight to your team, you're a task-doer, not a thinker.
+
+You could be the most capable person on the team — but if you don't speak in the first team meeting, you've already been categorized.
+
+The freshers who grow fast don't just work hard. They work visibly.
+
+How to apply this in Month 1:
+1. Speak once in every team meeting — even just a question.
+2. Send a weekly update to your manager without being asked.
+3. Bring one observation about your work to your team every two weeks.
+
+Save this and do point 1 starting your very next meeting.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text on screen]: "The unwritten rule that ends careers in Month 1."
+[Manav]: "Nobody puts this in your offer letter."
+
+CONTENT (2-45s)
+The rule: Visibility matters more than effort in the first 30 days.
+
+Work 10 hours — but if your manager can't see you solving problems, you're invisible.
+Finish every task — but never bring an insight: you're a task-doer.
+Most capable on the team — but silent in meetings: already categorized.
+
+Month 1 playbook:
+One: Speak once in every meeting. Even just a question.
+Two: Send weekly update to manager without being asked.
+Three: Bring one observation to the team every two weeks.
+
+CTA (45-55s)
+Fast growers don't just work hard. They work visibly.
+Save this. Do point 1 in your next meeting.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"The unwritten rule that ends careers in Month 1.",b:"Nobody puts it in your offer letter.\n\nBut it decides your first-year reputation more than anything else."},
+    {h:"The rule:",b:"Visibility matters more than effort\nin the first 30 days."},
+    {h:"What invisibility looks like:",b:"Work 10 hrs → manager can't see you solving problems → invisible.\nFinish every task → never bring an insight → task-doer.\nMost capable → silent in meetings → already categorized."},
+    {h:"Month 1 playbook:",b:"1. Speak once in every meeting — even just a question.\n2. Send weekly update to manager without being asked.\n3. Bring one observation to the team every 2 weeks."},
+    {h:"Save this. Start with point 1 in your next meeting.",b:"Fast growers don't just work hard.\n\nThey work visibly.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"The unwritten rule that ends careers in Month 1.",
+  static_c:`Nobody puts this in your offer letter.
+
+The rule: Visibility > Effort in the first 30 days.
+
+Month 1 playbook:
+1. Speak once in every team meeting.
+2. Send weekly update without being asked.
+3. Bring one observation to the team every 2 weeks.
+
+Fast growers don't just work hard.
+They work visibly.
+— Manav Lalotra, CEO & Founder, Thriversity` },
+
+{ type:"conf", trigger:"share",
+  screen:"I was mentally fired in Week 2 of my first job.",
+  q:'"My manager had already written me off. I didn\'t know it. This is how I found out — and what I changed in Week 3 that reversed the entire trajectory."',
+  cap:`I was mentally fired from my first job in Week 2.
+
+My manager had written me off. I didn't know it.
+
+I was working hard. I was completing tasks. I was on time.
+
+But I was doing one thing wrong that I couldn't see.
+
+I was waiting to be told.
+
+Every task, every decision, every move — I waited.
+
+"What should I do next?"
+"Is this the right approach?"
+"Should I send this or wait?"
+
+In college, waiting for instructions was correct behavior. The professor sets the task. You do it.
+
+In corporate, waiting signals something different. It signals that you need to be managed. Closely.
+
+My manager was busy. The last thing she needed was someone she had to push every day.
+
+In Week 3, someone told me this: "Be 10% ahead of what's expected, not 10% behind."
+
+I changed one thing: I stopped waiting and started proposing. "I was thinking I could do X next — does that make sense?"
+
+That one shift changed how she saw me in 2 weeks.
+
+Share this with a fresher who's still waiting to be told.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text]: "I was mentally fired in Week 2 of my first job."
+[Manav]: "My manager had written me off. I didn't know it."
+
+CONTENT (2-45s)
+I was working hard. Completing tasks. On time.
+But doing one thing wrong: waiting to be told.
+
+"What do I do next?" "Is this right?" "Should I send this?"
+
+In college — correct behavior. In corporate — signals you need to be closely managed.
+
+Week 3: someone told me "Be 10% ahead — not 10% behind."
+I stopped waiting. Started proposing: "I was thinking I could do X — does that make sense?"
+
+CTA (45-55s)
+That one shift changed how she saw me in 2 weeks.
+Share this with a fresher still waiting to be told.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"I was mentally fired in Week 2 of my first job.",b:"My manager had written me off.\n\nI didn't know it."},
+    {h:"What I was doing:",b:"Working hard. Completing tasks. On time.\n\nBut waiting for every instruction.\n'What do I do next?' 'Is this right?'"},
+    {h:"Why it was wrong:",b:"In college: waiting for instructions = correct.\n\nIn corporate: waiting = signals you need to be closely managed.\n\nShe was busy. She didn't need that."},
+    {h:"What changed in Week 3:",b:"'Be 10% ahead of what's expected — not 10% behind.'\n\nI stopped waiting. Started proposing:\n'I was thinking I could do X — does that make sense?'"},
+    {h:"That one shift changed everything.",b:"She saw me differently in 2 weeks.\n\nShare this with a fresher still waiting to be told.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"I was mentally fired in Week 2 of my first job.",
+  static_c:`Working hard. On time. Completing tasks.
+
+But waiting for every instruction.
+
+In college: waiting = correct.
+In corporate: waiting = "needs to be closely managed."
+
+The fix: Stop waiting. Start proposing.
+"I was thinking I could do X next — does that make sense?"
+
+10% ahead of expectations — not 10% behind.
+
+Share this with a fresher still waiting to be told.
+— Manav Lalotra, CEO & Founder, Thriversity` },
+
+{ type:"res", trigger:"save",
+  screen:"She went from confused fresher to team lead. 18 months.",
+  q:'"Not a prodigy. Not from a tier-1 college. Not a topper. The exact 4 things she did in her first 18 months that made her the go-to person on a team of 12."',
+  cap:`She joined as a confused fresher.
+
+18 months later, she was leading a team of 5.
+
+Not a topper. Not from IIT. Not the most technically skilled.
+
+Here's exactly what she did:
+
+Month 1–2: She wrote down everything she learned each day. Not for anyone else — for herself. It forced her to process, not just absorb.
+
+Month 3–6: She started solving one small problem nobody had asked her to solve. Not her job. But visible enough that people noticed.
+
+Month 7–12: She started documenting the team's processes — the ones that existed only in people's heads. Suddenly she was the person who knew how things worked.
+
+Month 13–18: She trained two new joiners. Without being asked. And her manager realized: she can multiply the team.
+
+That's when the conversation about leading happened.
+
+None of this required a top college or a 9.5 CGPA.
+
+It required being intentional — in a workplace full of people who are just reacting.
+
+Save this. Pick one of these four and start this month.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text]: "She went from confused fresher to team lead. 18 months."
+[Manav]: "Not a topper. Not from IIT. Here's exactly what she did."
+
+CONTENT (2-45s)
+Month 1-2: Wrote down everything she learned. Daily.
+Month 3-6: Solved one problem nobody asked her to solve.
+Month 7-12: Documented team processes that only existed in people's heads.
+Month 13-18: Trained two new joiners — without being asked.
+
+CTA (45-55s)
+Her manager realized: she can multiply the team.
+None of this needed a top college or 9.5 CGPA.
+Just intention — in a workplace full of people who are just reacting.
+Save this and start one of these this month.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"Confused fresher to team lead. 18 months.",b:"Not a topper. Not from IIT.\n\nHere's exactly what she did — month by month."},
+    {h:"Month 1–6:",b:"1-2: Wrote down everything she learned daily.\n\n3-6: Solved one small problem nobody asked her to solve."},
+    {h:"Month 7–18:",b:"7-12: Documented team processes that lived only in people's heads.\n\n13-18: Trained two new joiners. Without being asked."},
+    {h:"Why it worked:",b:"Her manager realized: she can multiply the team.\n\nThat's when the leadership conversation happened."},
+    {h:"Save this. Pick one of the four and start this month.",b:"No top college needed. No 9.5 CGPA.\n\nJust intention — in a workplace full of people just reacting.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"Confused fresher to team lead. 18 months.",
+  static_c:`Not a topper. Not from IIT.
+
+Month 1-2: Wrote what she learned daily.
+Month 3-6: Solved a problem nobody asked her to.
+Month 7-12: Documented processes in people's heads.
+Month 13-18: Trained new joiners — unprompted.
+
+Manager realized: she multiplies the team.
+
+No top college. No 9.5 CGPA.
+Just intention — while others were just reacting.
+
+Save this. Start one this month.
+— Manav Lalotra, CEO & Founder, Thriversity` }
+],
+
+// ── 11 FIRST SALARY & MONEY ─────────────────
+[
+{ type:"con", trigger:"save",
+  screen:"₹4.5 LPA is not ₹37,500/month.",
+  q:'"Every fresher calculates their salary wrong. The number on your offer letter and the number in your bank account are very different. Here\'s the math nobody explains."',
+  cap:`₹4.5 LPA is not ₹37,500/month.
+
+Every fresher makes this calculation. Almost all get it wrong.
+
+Here's what actually happens to ₹4.5 LPA:
+
+CTC: ₹4,50,000/year
+— Basic Salary: ₹1,80,000 (40% of CTC)
+— HRA: ₹90,000
+— PF (Employee): ₹21,600 (deducted from your salary)
+— PF (Employer): ₹21,600 (not part of your take-home)
+— Professional Tax: ₹2,500/year
+— TDS (Income Tax): varies, could be ₹5,000–₹15,000/year
+— Special Allowance: makes up the rest
+
+Actual in-hand: ₹28,000–₹32,000/month — not ₹37,500.
+
+The gap happens because:
+1. CTC includes employer's PF contribution (you never see this money)
+2. PF is deducted from your side too (12% of basic)
+3. TDS is deducted if your income is taxable
+4. Gratuity is part of CTC but you get it only after 5 years
+
+Your first salary slip will confuse you. This will not.
+
+Save this before your joining date.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text on screen]: "₹4.5 LPA is not ₹37,500/month."
+[Manav]: "Here's what actually hits your bank account — and why."
+
+CONTENT (2-45s)
+₹4.5 LPA broken down:
+CTC includes employer PF — money you never see.
+Your PF is deducted too — 12% of basic.
+TDS cuts in if you're taxable.
+Gratuity is in CTC — you get it after 5 years only.
+
+Actual in-hand: ₹28,000–₹32,000. Not ₹37,500.
+
+CTA (45-55s)
+Your first salary slip will confuse you.
+This won't.
+Save this before your joining date.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"₹4.5 LPA is not ₹37,500/month.",b:"Every fresher makes this calculation.\nAlmost all get it wrong."},
+    {h:"What CTC actually contains:",b:"Basic Salary (40%)\nHRA\nSpecial Allowance\nEmployer PF contribution ← you never see this\nGratuity ← only after 5 years"},
+    {h:"What gets deducted from your side:",b:"Employee PF: 12% of basic\nProfessional Tax: ~₹200/month\nTDS: if your income is taxable\n\nAll deducted before the money reaches you."},
+    {h:"Actual in-hand on ₹4.5 LPA:",b:"₹28,000 – ₹32,000/month.\n\nNot ₹37,500.\n\nThe gap is real and it's legal."},
+    {h:"Save this before your joining date.",b:"Your first salary slip will confuse you.\n\nThis won't.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"₹4.5 LPA is not ₹37,500/month.",
+  static_c:`The deductions on ₹4.5 LPA:
+
+❌ Employer PF (in CTC, you never see it)
+❌ Your PF: 12% of basic salary
+❌ Professional Tax: ~₹200/month
+❌ TDS: if taxable
+
+Actual in-hand: ₹28,000–₹32,000
+
+Not ₹37,500. Never was.
+
+Save this before your joining date.
+— Manav Lalotra, CEO & Founder, Thriversity` },
+
+{ type:"sto", trigger:"share",
+  screen:"He got his first salary. He called his mom.",
+  q:'"He expected ₹30,000. He saw ₹24,500. He thought there was an error. There wasn\'t. Here\'s what he learned — and what you need to know before your first credit."',
+  cap:`He got his first salary.
+
+He called his mom immediately.
+
+"They've made an error. ₹24,500 came instead of ₹30,000."
+
+There was no error.
+
+He had a ₹3.6 LPA offer. He'd calculated ₹30,000/month.
+
+What he hadn't factored:
+
+1. PF deduction: ₹1,440/month (goes to your PF account, not lost — but not in hand)
+2. Professional Tax: ₹200/month
+3. TDS: ₹1,800/month (because he hadn't submitted his investment declaration)
+4. Salary paid for 23 working days in his first month, not 30 calendar days
+
+Total difference: ₹5,440 — all accounted for. All legal. All his money in different forms.
+
+The lesson wasn't about the money.
+
+It was about submitting investment declarations on time, understanding PF as forced savings, and not panicking at the first slip.
+
+Share this with someone joining their first job next month.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text]: "He got his first salary. He called his mom."
+[Manav]: "'They've made an error.' There was no error."
+
+CONTENT (2-45s)
+₹3.6 LPA offer. Expected ₹30,000. Got ₹24,500.
+
+What he'd missed:
+PF deduction: ₹1,440/month (forced savings, not lost)
+Professional Tax: ₹200/month
+TDS: ₹1,800 (hadn't submitted investment declaration)
+First month: paid for 23 working days, not 30 calendar days
+
+CTA (45-55s)
+Total gap: ₹5,440. All legal. All accounted for.
+Submit your investment declaration on Day 1.
+Share this with someone joining their first job next month.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"He got his first salary. He called his mom.",b:"'They've made an error. ₹24,500 came instead of ₹30,000.'\n\nThere was no error."},
+    {h:"₹3.6 LPA. Expected ₹30,000. Got ₹24,500.",b:"Deductions he hadn't factored:\n\n→ PF: ₹1,440/month\n→ Professional Tax: ₹200/month"},
+    {h:"More deductions:",b:"→ TDS: ₹1,800 (hadn't submitted investment declaration)\n→ First month paid for 23 working days — not 30 calendar days"},
+    {h:"Total gap: ₹5,440.",b:"All legal. All accounted for.\n\nPF = forced savings, not money lost.\nTDS = avoidable if you submit declarations on time."},
+    {h:"Share this with someone joining their first job.",b:"Submit your investment declaration on Day 1.\n\nDon't let your first salary slip surprise you.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"He got his first salary. He called his mom.",
+  static_c:`"They made an error. Got ₹24,500 instead of ₹30,000."
+
+No error. Just deductions he didn't know about:
+→ PF: ₹1,440/month
+→ Professional Tax: ₹200
+→ TDS: ₹1,800 (no investment declaration submitted)
+→ First month = 23 working days, not 30
+
+Submit your investment declaration on Day 1.
+PF is savings — not money lost.
+
+Share this with someone joining their first job.
+— Manav Lalotra, CEO & Founder, Thriversity` },
+
+{ type:"cur", trigger:"save",
+  screen:"Your company is taking ₹X from your salary. Legally.",
+  q:'"It\'s called a deduction. It\'s mandatory. And most freshers spend their first year not knowing what each line on their salary slip actually means. Here\'s the full decode."',
+  cap:`Your company is taking money from your salary every month.
+
+Legally. Mandatorily. And with your (unknowing) consent.
+
+Your salary slip has lines most freshers never understand. Here's the decode:
+
+EARNINGS side:
+Basic Salary — taxable, forms base for PF calculation
+HRA — House Rent Allowance, partially tax-free if you pay rent
+Special Allowance — taxable, fills the gap to reach your CTC number
+LTA — Leave Travel Allowance, tax-free if you travel and claim
+
+DEDUCTIONS side:
+EPF — 12% of your basic. Goes to your PF account. Yours after 5 years of service.
+Professional Tax — state tax. ₹150–₹200/month depending on your state.
+TDS — Tax Deducted at Source. Avoidable if you submit investment declarations.
+ESI — Only if CTC < ₹21,000. Employee State Insurance for health benefits.
+
+How to reduce TDS legally:
+1. Submit Form 12BB with your investment proof (80C: LIC, ELSS, PPF)
+2. Declare HRA exemption if you pay rent
+3. Declare LTA if you're planning to travel
+
+Save this. Read your first salary slip with this open next to it.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text]: "Your company is taking ₹X from your salary. Legally."
+[Manav]: "Here's what every line on your salary slip actually means."
+
+CONTENT (2-45s)
+Earnings: Basic (taxable) | HRA (partially tax-free) | Special Allowance | LTA
+
+Deductions:
+EPF — 12% of basic. YOUR money. You get it after 5 years.
+Professional Tax — ₹150–200/month. State tax.
+TDS — avoidable. Submit investment declarations.
+
+CTA (45-55s)
+Save this. Read your first salary slip with this open next to it.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"Your company is taking money from your salary. Legally.",b:"Every line on your salary slip has a meaning.\n\nHere's the full decode."},
+    {h:"EARNINGS side:",b:"Basic Salary — taxable, base for PF.\nHRA — partially tax-free if you pay rent.\nSpecial Allowance — taxable, fills gap to CTC.\nLTA — tax-free if you claim travel."},
+    {h:"DEDUCTIONS side:",b:"EPF — 12% of basic. YOUR money. Returned after 5 years.\nProfessional Tax — ₹150–200/month.\nTDS — avoidable with investment declarations.\nESI — only if CTC is below ₹21,000."},
+    {h:"How to reduce TDS legally:",b:"1. Submit Form 12BB with investment proof.\n2. Declare HRA exemption (if paying rent).\n3. Declare LTA if you plan to travel."},
+    {h:"Save this. Read your salary slip with this open.",b:"You're not losing money.\nYou're not being cheated.\nYou just didn't have the decoder — until now.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"Your salary slip decoded.",
+  static_c:`Every deduction explained:
+
+EPF — 12% of basic. Your money. Back after 5 yrs.
+Professional Tax — ₹150–200/month state tax.
+TDS — avoidable. Submit Form 12BB + investment proof.
+HRA — tax-free if you pay rent and declare it.
+
+How to reduce TDS:
+→ LIC / ELSS / PPF under 80C
+→ HRA exemption
+→ LTA declaration
+
+Save this. Read your first slip with this open.
+— Manav Lalotra, CEO & Founder, Thriversity` },
+
+{ type:"conf", trigger:"share",
+  screen:"I spent my first salary in 4 days.",
+  q:'"Not proud of it. But I\'m sharing the exact budget framework I wish someone had given me before my first credit. The one I now give every fresher I work with."',
+  cap:`I spent my first salary in 4 days.
+
+Every rupee. In 4 days.
+
+New phone. Celebration dinner. Clothes. Sending money home. Subscriptions.
+
+Month 2 felt like starting over.
+
+I wish someone had given me a framework before that first credit.
+
+Here's the one I now share with every fresher:
+
+The 50-30-20 rule — adjusted for Indian freshers:
+
+50% — Fixed expenses: rent, travel, food (groceries, not Swiggy every day)
+20% — Savings and investment: SIP, emergency fund, RD
+20% — Family support (if applicable)
+10% — Lifestyle: one subscription, dining out, entertainment
+
+Month 1 specifically:
+Before spending anything — set up one SIP (even ₹500/month).
+Open a separate savings account for your emergency fund.
+Transfer family support on Day 1 — before you see the rest.
+
+The first salary feels like freedom. It is.
+
+But freedom with a framework lasts longer than freedom without one.
+
+Share this with someone getting their first salary this month.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text]: "I spent my first salary in 4 days."
+[Manav]: "Every rupee. Here's the framework I wish I had."
+
+CONTENT (2-45s)
+New phone. Dinner. Clothes. Subscriptions. Sending money home.
+Month 2 felt like starting over.
+
+The 50-30-20 for Indian freshers:
+50% — Fixed expenses (rent, travel, groceries)
+20% — Savings + SIP + emergency fund
+20% — Family support
+10% — Lifestyle
+
+Month 1 rule: Set up SIP before you spend anything else.
+
+CTA (45-55s)
+Freedom with a framework lasts longer than freedom without one.
+Share this with someone getting their first salary this month.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"I spent my first salary in 4 days.",b:"Every rupee.\n\nNew phone. Dinner. Clothes. Subscriptions.\n\nMonth 2 felt like starting over."},
+    {h:"The 50-30-20 for Indian freshers:",b:"50% — Fixed expenses (rent, travel, food)\n20% — Savings + SIP + emergency fund\n20% — Family support\n10% — Lifestyle"},
+    {h:"Month 1 specifically:",b:"→ Set up one SIP before spending anything else.\n→ Open separate account for emergency fund.\n→ Transfer family support on Day 1."},
+    {h:"Even ₹500/month in SIP from Month 1:",b:"At 12% annual return over 5 years:\n₹500/month → ₹40,000+\n₹2,000/month → ₹1,62,000+\n\nThe habit matters more than the amount."},
+    {h:"Share this with someone getting their first salary.",b:"Freedom with a framework lasts longer\nthan freedom without one.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"I spent my first salary in 4 days.",
+  static_c:`Every rupee. Gone.
+
+The framework I wish I had:
+
+50% — Fixed expenses
+20% — Savings + SIP + emergency fund
+20% — Family support
+10% — Lifestyle
+
+Month 1 rule:
+→ Set SIP before you spend anything.
+→ Transfer family money Day 1.
+→ Emergency fund in a separate account.
+
+Freedom with a framework lasts longer.
+
+Share this with someone getting their first salary.
+— Manav Lalotra, CEO & Founder, Thriversity` },
+
+{ type:"res", trigger:"save",
+  screen:"She saved ₹1.2L in her first year. Here's the exact split.",
+  q:'"₹3.8 LPA package. Tier 2 city. Supporting family. Still saved ₹1.2 lakhs in 12 months. The exact month-by-month breakdown she shared with me."',
+  cap:`₹3.8 LPA package. Tier 2 city. Supporting family.
+
+She saved ₹1.2 lakhs in her first year.
+
+Here's the exact breakdown she shared with me:
+
+Monthly in-hand: ₹26,500
+
+Fixed expenses: ₹12,500
+— Rent + electricity: ₹7,000 (shared PG)
+— Travel: ₹2,000
+— Groceries + cooking: ₹2,500
+— Phone + internet: ₹1,000
+
+Family transfer: ₹5,000/month
+
+Savings + investment: ₹5,000/month
+— SIP (ELSS): ₹2,000
+— RD: ₹2,000
+— Emergency fund: ₹1,000
+
+Lifestyle: ₹4,000/month
+— One dining out per week: ₹1,200
+— OTT subscriptions: ₹500
+— Clothing + personal: ₹2,300
+
+Total saved in 12 months:
+SIP: ₹24,000 + returns
+RD: ₹24,000
+Emergency fund: ₹12,000
+EPF (employer + employee): ₹52,000+
+Total: ~₹1,12,000–₹1,25,000
+
+She didn't earn more. She allocated intentionally.
+
+Save this. Build your own version before your first salary.
+
+— Manav Lalotra, CEO & Founder, Thriversity`,
+  reel:`HOOK (0-2s)
+[Text]: "She saved ₹1.2 lakhs in her first year."
+[Manav]: "₹3.8 LPA. Tier 2 city. Supporting family. Here's exactly how."
+
+CONTENT (2-45s)
+Monthly in-hand: ₹26,500
+Fixed expenses: ₹12,500
+Family transfer: ₹5,000
+Savings + SIP + RD: ₹5,000
+Lifestyle: ₹4,000
+
+12-month result: ₹1.12L–₹1.25L saved.
+Including EPF — which she'd forgotten about.
+
+CTA (45-55s)
+She didn't earn more. She allocated intentionally.
+Save this. Build your own version before your first salary.
+— Manav Lalotra @thriversity_prodedgee`,
+  slides:[
+    {h:"₹3.8 LPA. Tier 2 city. Supporting family.",b:"She saved ₹1.2 lakhs in her first year.\n\nHere's the exact monthly split."},
+    {h:"Monthly in-hand: ₹26,500",b:"Fixed expenses: ₹12,500\n(Rent ₹7k | Travel ₹2k | Groceries ₹2.5k | Phone ₹1k)"},
+    {h:"The intentional allocations:",b:"Family transfer: ₹5,000/month\nSavings + SIP + RD: ₹5,000/month\nLifestyle: ₹4,000/month"},
+    {h:"12-month result:",b:"SIP (ELSS): ₹24,000 + returns\nRD: ₹24,000\nEmergency fund: ₹12,000\nEPF (both sides): ₹52,000+\n\nTotal: ₹1.12–₹1.25 lakhs"},
+    {h:"She didn't earn more. She allocated intentionally.",b:"Save this. Build your own version before your first salary.\n\n@thriversity_prodedgee"}
+  ],
+  static_h:"₹3.8 LPA. Saved ₹1.2L in Year 1. Here's how.",
+  static_c:`Monthly in-hand: ₹26,500
+
+Fixed: ₹12,500
+Family: ₹5,000
+Savings/SIP/RD: ₹5,000
+Lifestyle: ₹4,000
+
+12-month result: ₹1.12–₹1.25 lakhs
+(incl. EPF you didn't even notice accumulating)
+
+She didn't earn more.
+She allocated intentionally.
+
+Save this before your first salary.
+— Manav Lalotra, CEO & Founder, Thriversity` }
 ]
 ]
 
@@ -3699,6 +4823,9 @@ async function aiRefresh() {
   var hookType = HOOK_TYPES[curHook];
   var hookDesc = HOOK_DESCS[curHook];
   var intensity = document.getElementById("intSel").value;
+  var emotion = document.getElementById("emoSel").value;
+  var series = document.getElementById("seriesSel").value;
+  var trend = document.getElementById("trendSel").value;
   var pi = getCurrentPillarIndex();
   var suf = getSuffix(pi);
 
@@ -3781,20 +4908,71 @@ Writing style:
 • avoid generic AI sounding language
 
 Generate:
-1. Viral hook
-2. Talking reel script
-3. Caption
-4. CTA
-5. First comment strategy
-6. B-roll ideas
-7. Emotional rehook
-8. Save/share trigger
+1. 5 viral hook variations
+2. Best hook selection
+3. Talking reel script
+CAMERA DIRECTIONS:
+- where creator should zoom in
+- where creator should pause
+- where creator should change tone
+- facial expression suggestions
+- hand gesture suggestions
+- where subtitles should appear
+- best b-roll moments
+- screen text timing
+- best reel pacing
 
+Make directions practical for mobile creators recording at home or office.
+4. Caption
+5. CTA
+6. First comment strategy
+7. B-roll ideas
+8. Emotional rehook
+RETENTION REHOOKS:
+- add a curiosity interrupt every 5-7 seconds
+- create mid-video open loops
+- use emotional spikes
+- create “wait till end” moments naturally
+- avoid repetitive pacing
+- include 2 retention rehooks minimum
+9. Save/share trigger
 Content Context:
 Name: ${name}
 Hook Type: ${hookType}
 Hook Psychology: ${hookDesc}
 Content intensity: ${intensity}
+Primary Emotion: ${emotion}
+Series Context: ${series}
+Trend Style: ${trend}
+Generate 5 different hook styles:
+If series is not "None":
+maintain same recurring creator personality
+make content feel episodic
+add callback-style references
+make audience wait for next part
+If trend mode is "Instagram Viral":
+use fast pacing
+use aggressive hooks
+use creator-style punchlines
+optimize for reels watch time
+
+If trend mode is "LinkedIn Creator":
+make insights sound professional but emotional
+use relatable workplace situations
+
+If trend mode is "Founder Authority":
+sound like experienced founder/operator
+use confident communication
+
+If trend mode is "Gen Z Aggressive":
+use sharp internet-native phrasing
+use high-energy creator tone
+
+If trend mode is "Storytelling Viral":
+focus on emotional storytelling arcs
+increase suspense and curiosity
+
+Choose one as BEST HOOK.
 If intensity is "Aggressive Viral":
 • use stronger emotional hooks
 • create controversy carefully
@@ -3811,11 +4989,13 @@ IMPORTANT:
 • Keep sentences short
 • Use line breaks frequently
 Hooks must be:
-• maximum 8 to 12 words
-• emotionally aggressive
+Generate 5 different hook styles:
+• fear based
 • curiosity based
-• easy to read in 1 second
-• optimized for Instagram retention
+• contrarian
+• emotional
+• authority based
+Choose one as BEST HOOK.
 Examples:
 • Nobody tells freshers this
 • Your degree is not the problem
@@ -3872,6 +5052,25 @@ Every talking script must include:
 • mid-video rehook
 • payoff ending
 Generate extremely viral creator-style content.
+Also generate:
+
+VIRAL SCORE ANALYSIS:
+1. Viral Score out of 10
+2. Hook Strength
+3. Retention Potential
+4. Share Potential
+5. Save Potential
+6. Follower Conversion Potential
+
+Scoring Rules:
+- strong emotional hooks = higher score
+- curiosity gaps = higher score
+- relatable Indian workplace situations = higher score
+- short punchy lines = higher score
+- generic motivational content = lower score
+- weak hooks = lower score
+
+Be brutally honest in scoring.
 
 `;
   try {
