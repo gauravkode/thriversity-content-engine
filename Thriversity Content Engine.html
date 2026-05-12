@@ -125,15 +125,15 @@ select{width:100%;padding:8px 10px;border-radius:8px;border:1px solid #ddd;backg
     <div>
 <span class="fl">Audience</span>
 
-<select id="audSel">
-<option>Both</option>
-<option>Fresher</option>
-<option>Final year student</option>
-<option>Early professional 2-5 yrs</option>
-<option>Senior professional</option>
-<option>Fresher (0–6 months into job)</option>
-<option>Pre-final year student</option>
-</select>
+<div id="audSel">
+  <label><input type="checkbox" value="Both"> Both</label><br>
+  <label><input type="checkbox" value="Fresher"> Fresher</label><br>
+  <label><input type="checkbox" value="Final year student"> Final year student</label><br>
+  <label><input type="checkbox" value="Early professional 2-5 yrs"> Early professional 2-5 yrs</label><br>
+  <label><input type="checkbox" value="Senior professional"> Senior professional</label><br>
+  <label><input type="checkbox" value="Fresher (0-6 months into job)"> Fresher (0-6 months into job)</label><br>
+  <label><input type="checkbox" value="Pre-final year student"> Pre-final year student</label>
+</div>
 </div>
 
 <div>
@@ -179,7 +179,7 @@ select{width:100%;padding:8px 10px;border-radius:8px;border:1px solid #ddd;backg
 </div>
 
   <div class="brow">
-    <button class="gbtn" onclick="generate()">Generate content ↗</button>
+    <button class="gbtn" onclick="aiRefresh()">Generate content ↗</button>
     <button class="sbtn" onclick="nextItem()">Next →</button>
   </div>
 
@@ -4787,7 +4787,7 @@ function generate() {
     '<span class="tag" style="background:' + (tr==="save"?"#e8f0fe":"#fff3e8") + ';color:' + (tr==="save"?"#1a56db":"#E8883C") + '">' + (tr==="save"?"💾 Save trigger":"📤 Share trigger") + '</span>' +
     '</div>';
 
-  var sboxHtml = '<div class="sbox"><div class="sh">' + (d.screen||"") + '</div><div class="sq">After 20+ years in corporate — here is what nobody warns you about.</div><div class="sr">(Read caption)</div></div>';
+  var sboxHtml = '<div class="sbox"><div class="sh">' + (d.screen||"") + '</div><div class="sq">After 20+ years in corporate — here is what nobody warns you about.</div><div class="sr">' + randomCta + '</div></div>';
 
   var html = "";
 
@@ -5207,6 +5207,21 @@ var p2 = {
 };
 
     var hcol = HOOK_COLORS[curHook];
+    const captionCtas = [
+  "(Read caption)",
+  "(Wait for the twist)",
+  "(Nobody talks about this)",
+  "(Save this post)",
+  "(Freshers need this)",
+  "(Most people learn this late)",
+  "(This changes everything)",
+  "(Part 2 in caption)",
+  "(Watch till end)",
+  "(This will help later)"
+];
+
+const randomCta =
+captionCtas[Math.floor(Math.random() * captionCtas.length)];
     var sboxHtml = '<div class="sbox"><div class="sh"style="font-size:22px;font-weight:800;line-height:1.5;">' + p2.screen + '</div><div class="sq">' + p2.subtext + '</div><div class="sr">(Read caption)</div></div>';
     var tagHtml = '<div style="margin-bottom:8px"><span class="tag" style="background:#E8883C22;color:#E8883C">✦ AI Generated — Gemini</span><span class="tag" style="background:' + (p2.trigger==="save"?"#e8f0fe":"#fff3e8") + ';color:' + (p2.trigger==="save"?"#1a56db":"#E8883C") + '">' + (p2.trigger==="save"?"💾 Save trigger":"📤 Share trigger") + '</span></div>';
 
